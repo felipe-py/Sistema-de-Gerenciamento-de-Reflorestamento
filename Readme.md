@@ -21,6 +21,7 @@ Como uma primeira versão do sistema, serão considerados apenas os estados do N
 O sistema deverá permitir a entrada de dados sobre as áreas de reflorestamento, contendo os seguintes dados:
 
 - Código da área reflorestada
+- Nome do estado em que ocorreu o reflorestamento
 - Cidade em que se encontra
 - Dimensões (retangulares) da área
 - Tipo de árvore usado no reflorestamento daquela área (são elas: Cajueiro, Dendê, Coqueiro, Bambu gigante, Mangueira, Ipê)
