@@ -9,11 +9,13 @@ Projeto de um gerenciador para áreas reflorestadas requisitado aos alunos do MI
  - Especificação do problema -
 </h3>
 
-Sabendo que o Brasil é um país com grandes áreas desmatadas, que como consequência vem perdendo muitas espécies do nosso patrimônio vegetal, surgiu um movimento de incentivo ao reflorestamento, que é o replantio para reposição de áreas de florestas.
+O Brasil enfrenta um desafio crítico com vastas áreas desmatadas, resultando na perda anual de uma quantidade significativa de árvores em nosso ecossistema. Diante desse cenário, surgiu um movimento de incentivo ao reflorestamento, visando o replantio para a reposição das áreas de florestas que foram desmatadas. A organização não governamental (ONG) chamada "Reflorestar é Reviver" está preocupada com essa questão e decidiu buscar a ajuda dos estudantes do curso de Engenharia de Computação da UEFS com conhecimentos em Algoritmos e Programação.
+O objetivo é desenvolver um sistema computacional em Python que auxilie no gerenciamento das áreas de reflorestamento, coletando informações sobre cada área reflorestada e gerando relatórios que ofereçam uma visão abrangente da situação atual do reflorestamento em todo o país."
 
-Uma organização governamental chamada "Reflorestar é Reviver", preocupada com esse problema, lançou um edital aos estudantes de Algoritmos e Programação do Curso de Engenharia de Computação da UEFS. A ideia é que seja desenvolvido um software computacional em Python capaz de ajudar no gerenciamento das áreas de reflorestamento, solicitando informações sobre cada área reflorestada e gerar relatórios sobre a situação anual do reflorestamento nacional.
 
-Como uma primeira versão do sistema, serão considerados apenas os estados do Nordeste. 
+Como é uma primeira versão do sistema, serão
+considerados apenas os estados do Nordeste.
+
 
 <h3 align="center">
  - Requisitos de desenvolvimento -
@@ -21,16 +23,28 @@ Como uma primeira versão do sistema, serão considerados apenas os estados do N
 O sistema deverá permitir a entrada de dados sobre as áreas de reflorestamento, contendo os seguintes dados:
 
 - Código da área reflorestada
-- Nome do estado em que ocorreu o reflorestamento
-- Cidade em que se encontra
-- Dimensões (retangulares) da área
+- Cidade e Estado em que se encontra a área reflorestada
+- Dimensões (retangulares) da área reflorestada (base x altura)
 - Tipo de árvore usado no reflorestamento daquela área (são elas: Cajueiro, Dendê, Coqueiro, Bambu gigante, Mangueira, Ipê)
 
-O sistema deverá permitir a entrada de dados de forma online, que pode ser interrompida quando o usuário desejar. Ao final do período de coleta de dados, o sistema deverá gerar um relatório do reflorestamento da região Nordeste contendo as seguintes informações:
+O sistema deverá permitir a entrada de dados da área de reflorestamento, que pode ser interrompida quando o usuário desejar. Ao final do período de coleta de dados, o sistema deverá gerar um relatório do reflorestamento da região Nordeste contendo as seguintes informações:
 
 - Área total reflorestada por estado
-- Área total geral rflorestada da região nordeste
+- Área total geral reflorestada da região Nordeste
 - O tipo de árvore mais usada no reflorestamento e a menos usada(Considerando apenas o uso e não a dimensão das áreas reflorestadas)
 - Todos os dados da maior área reflorestada
 - A quantidade de áreas reflorestadas por estado
 - O estado menos reflorestado, considerando a dimensão de área reflorestada
+
+<h3 align="center">
+ - Produto -
+</h3>
+
+A implementação do software é feita utilizando linguagem Python e o relatório padronizadoi nos moldes da SBC (Sociedade Brasileira de Computação).
+
+## Ferramentas utilizadas
+- Python
+- VS Code
+
+## Autor
+- [Felipe Silva](https://github.com/felipe-py)
