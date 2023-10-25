@@ -9,6 +9,8 @@ autoria que não a minha está destacado com uma citação do autor e a fonte do
 ciente que estes trechos não serão considerados para fins de avaliação.
 /*************************************************************************************'''
 
+from funcoes.FuncoesGrafico import graficoestados
+
 #Variáveis que realizarão a contagem da área replantada por estado, sendo descrita como
 #total estado + sigla do estado nordestino.
 tot_estadoba = 0;tot_estadose = 0;tot_estadoal = 0;tot_estadope = 0;tot_estadopb = 0;tot_estadorn = 0;tot_estadoce = 0;tot_estadoma = 0;tot_estadopi = 0
@@ -164,17 +166,8 @@ while cadastro != '3':
             print('Nenhuma area foi cadastrada para gerar o relatorio.')
 
 #Com a existência de áreas cadastradas o relatório será gerado normalmente.
-#Para deixar a visualização mais agradável os prints que mostram a área total de uma árvore ou estado, estão 
-#formatados com uma limitação de duas casas decimais.
+#A BIBLIOTECA MATPLOTLIB É UTILIZADA PARA EXIBIR O TOTAL DE ÁREA REFLORESTADA POR ESTADO
         else:
-            print('\nAREA TOTAL POR ESTADO:\n')
-            print('{:.2f} m² na Bahia\n{:.2f} m² no Alagoas\n{:.2f} m² no Ceara'.format(tot_estadoba,tot_estadoal,tot_estadoce))
-            print('{:.2f} m² no Maranhao\n{:.2f} m² na Paraiba\n{:.2f} m² no Pernambuco'.format(tot_estadoma,tot_estadopb,tot_estadope))
-            print('{:.2f} m² no Piaui\n{:.2f} m² no Rio Grande do Norte\n{:.2f} m² no Sergipe'.format(tot_estadopi,tot_estadorn,tot_estadose))
-            print('\nAREA REFOLRESTADA EM TODA REGIAO NOREDESTE: {:.2f} m²\n'.format(tot_nordeste))
-            print('AREA TOTAL POR ARVORE:\n')
-            print('{:.2f} m² de cajueiro\n{:.2f} m² de mangueira\n{:.2f} m² de dende'.format(tot_cajueiro, tot_mangueira, tot_dende))
-            print('{:.2f} m² de coqueiro\n{:.2f} m² de bambu gigante\n{:.2f} m² de ipe\n'.format(tot_coqueiro, tot_bambugigante, tot_ipe))
             
 #Em caso de empate na quantidade de uso das árvores, será feira uma verificação com todas as variáveis contadoras 
 #das árvores para evitar uma informação repetida na parte do relatório que contempla as árvores mais e menos 
@@ -289,11 +282,6 @@ while cadastro != '3':
                 arvore_maior = 'IPE'
             print('ARVORE: {}'.format(arvore_maior))
             
-            print('\nQUANTIDADE DE AREAS REFOLRESTADAS POR ESTADO:\n')
-            print('{} na Bahia\n{} no Alagoas\n{} no Ceara'.format(quant_areaba,quant_areaal,quant_areace))
-            print('{} no Maranhao\n{} na Paraiba\n{} no Pernambuco'.format(quant_areama,quant_areapb,quant_areape))
-            print('{} no piaui\n{} no Rio Grande do Norte\n{} no Sergipe\n'.format(quant_areapi,quant_arearn, quant_arease))
-            
 #No momento final do relatório, o estado menos reflorestado será exibido, comparações serão feitas para que
 #em caso de empate a informaçao seja mostrada corretamente.
             print('ESTADO(S) MENOS REFLORESTADO(S):\n')
@@ -323,4 +311,7 @@ while cadastro != '3':
 
             if tot_estadopi <= tot_estadoal and tot_estadopi <= tot_estadoba and tot_estadopi <= tot_estadoce and tot_estadopi <= tot_estadoma and tot_estadopi <= tot_estadopb and tot_estadopi <= tot_estadope and tot_estadopi <= tot_estadorn and tot_estadopi <= tot_estadose:
                 print('Piaui com {:.2f} m²'.format(tot_estadopi))
+
+            graficoestados(quant_areaba, quant_areaal, quant_areace, quant_areama, quant_areapb, quant_areape, quant_areapi, quant_arearn, quant_arease,tot_estadoba, tot_estadoal, tot_estadoce, tot_estadoma, tot_estadopb, tot_estadope, tot_estadopi, tot_estadorn, tot_estadose)
+
 #FIM DO PROGRAMA            
