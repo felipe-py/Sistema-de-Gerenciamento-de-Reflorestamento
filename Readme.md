@@ -12,11 +12,9 @@ Projeto de um gerenciador para áreas reflorestadas requisitado aos alunos do MI
 <p align="justify">
 O Brasil enfrenta um desafio crítico com vastas áreas desmatadas, resultando na perda anual de uma quantidade significativa de árvores em nosso ecossistema. Diante desse cenário, surgiu um movimento de incentivo ao reflorestamento, visando o replantio para a reposição das áreas de florestas que foram desmatadas. A organização não governamental (ONG) chamada "Reflorestar é Reviver" está preocupada com essa questão e decidiu buscar a ajuda dos estudantes do curso de Engenharia de Computação da UEFS com conhecimentos em Algoritmos e Programação.
 O objetivo é desenvolver um sistema computacional em Python que auxilie no gerenciamento das áreas de reflorestamento, coletando informações sobre cada área reflorestada e gerando relatórios que ofereçam uma visão abrangente da situação atual do reflorestamento em todo o país."
+
+Como é uma primeira versão do sistema, serão considerados apenas os estados do Nordeste.
 </p>
-
-Como é uma primeira versão do sistema, serão
-considerados apenas os estados do Nordeste.
-
 
 <h3 align="center">
  - Requisitos do sistema -
@@ -24,11 +22,14 @@ considerados apenas os estados do Nordeste.
 
 <p align="justify">
 O sistema deverá permitir a entrada de dados sobre as áreas de reflorestamento, contendo os seguintes dados:
+
 - Código da área reflorestada
 - Cidade e Estado em que se encontra a área reflorestada
 - Dimensões (retangulares) da área reflorestada (base x altura)
 - Tipo de árvore usado no reflorestamento daquela área (são elas: Cajueiro, Dendê, Coqueiro, Bambu gigante, Mangueira, Ipê)
+</p>
 
+<p align="justify">
 O sistema deverá permitir a entrada de dados da área de reflorestamento, que pode ser interrompida quando o usuário desejar. Ao final do período de coleta de dados, o sistema deverá gerar um relatório do reflorestamento da região Nordeste contendo as seguintes informações:
 
 - Área total reflorestada por estado
